@@ -1,0 +1,315 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3 levels in total" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "总共三关"
+          }
+        }
+      }
+    },
+    "Are you sure you want to clear the record?" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你确定要清除纪录吗？"
+          }
+        }
+      }
+    },
+    "at %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 %@"
+          }
+        }
+      }
+    },
+    "Best Time: %@" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最佳纪录：%@"
+          }
+        }
+      }
+    },
+    "Best Time: %@ " : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最佳纪录：%@"
+          }
+        }
+      }
+    },
+    "Congratulations, you win!" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恭喜，你赢了！"
+          }
+        }
+      }
+    },
+    "Current Time: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "至今所用时间： %@"
+          }
+        }
+      }
+    },
+    "Each time two circles collide, they become smaller" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每次两圆相撞， 都会变小"
+          }
+        }
+      }
+    },
+    "Each time you collide the two circles, both circles become smaller" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每次两个圆碰撞之后，它们都会变小"
+          }
+        }
+      }
+    },
+    "Game Paused" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停"
+          }
+        }
+      }
+    },
+    "How to Play" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这个游戏怎么玩"
+          }
+        }
+      }
+    },
+    "Level 1" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第一关"
+          }
+        }
+      }
+    },
+    "Level 2" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第二关"
+          }
+        }
+      }
+    },
+    "Level 3" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "第三关"
+          }
+        }
+      }
+    },
+    "No" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不要"
+          }
+        }
+      }
+    },
+    "on %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 %@"
+          }
+        }
+      }
+    },
+    "Tap the screen to pause and unpause while the game is in progress" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在游戏进行中时，点击屏幕来暂停和继续游戏"
+          }
+        }
+      }
+    },
+    "Tap the screen to pause/unpause" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击屏幕暂停和继续"
+          }
+        }
+      }
+    },
+    "Tap to clear the record" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击这里来清除纪录"
+          }
+        }
+      }
+    },
+    "Tap to continue" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击屏幕继续"
+          }
+        }
+      }
+    },
+    "Tap to play again" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击屏幕再玩一次"
+          }
+        }
+      }
+    },
+    "Tap to start" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "点击开始游戏"
+          }
+        }
+      }
+    },
+    "The objective is to reduce circle size to 0" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "目标是将圆缩小到消失"
+          }
+        }
+      }
+    },
+    "There are 3 levels, and the game becomes slightly harder in each level" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一共有三关，每关都会变得更难一些"
+          }
+        }
+      }
+    },
+    "Tilt your device in different directions to accelerate the blue circle" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "倾斜设备以向不同方向加速蓝圆"
+          }
+        }
+      }
+    },
+    "Tilt your device to roll the blue circle" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "倾斜设备以滚动蓝圆"
+          }
+        }
+      }
+    },
+    "Time: %@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通关时间：%@"
+          }
+        }
+      }
+    },
+    "When they reach size 0, you pass to the next level" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "当圆大小减少到零，你就能通关"
+          }
+        }
+      }
+    },
+    "Yes" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "好的"
+          }
+        }
+      }
+    },
+    "Your objective is to collide the two circles" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "你的目标是让两个圆碰撞"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
