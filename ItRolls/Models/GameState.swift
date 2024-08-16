@@ -74,7 +74,7 @@ struct GameState {
         }
     }
 
-    mutating func moveCircle(newTime: Date, screenSize: CGSize, motionData: MotionData, updateRecord: (TimeInterval) -> Void) {
+    mutating func moveCircle(newTime: Date, screenSize: CGSize, motionData: MotionData, updateRecord: (TimeInterval) -> Void, audioEffect: AudioEffect) {
         defer { currentTime = newTime }
         let appActiveState = UIApplication.shared.applicationState
         guard appActiveState == .active && currentScreenState == .gameOngoing else {
@@ -86,23 +86,29 @@ struct GameState {
         if ballPosition.x - radius < 0 {
             ballPosition.x = radius
             ballVelocity.dx = -ballVelocity.dx / 2
+            audioEffect.play(.bounce)
         } else if ballPosition.x + radius > screenSize.width {
             ballPosition.x = screenSize.width-radius
             ballVelocity.dx = -ballVelocity.dx / 2
+            audioEffect.play(.bounce)
         }
         ballPosition.y += ballVelocity.dy * deltaTime
         if ballPosition.y - radius < 0 {
             ballPosition.y = radius
             ballVelocity.dy = -ballVelocity.dy / 2
+            audioEffect.play(.bounce)
         } else if ballPosition.y + radius > screenSize.height {
             ballPosition.y = screenSize.height-radius
             ballVelocity.dy = -ballVelocity.dy / 2
+            audioEffect.play(.bounce)
         }
         if (isInContact(position1: ballPosition, position2: targetPosition, radius: radius)) {
             generateTargetLocation(screenSize: screenSize)
             radius -= radiusDecreaseIntervals
             if radius == 0 {
-                advanceLevel(updateRecord: updateRecord)
+                advanceLevel(updateRecord: updateRecord, audioEffect: audioEffect)
+            } else {
+                audioEffect.play(.elimination)
             }
         }
         let rollAcceleration = (motionData.roll ?? 0)*acceleration*deltaTime
@@ -116,16 +122,18 @@ struct GameState {
         }
         if screenshotMode && immediateAdvanceLevel {
             gameRunningTime += TimeInterval.random(in: 20...30)
-            advanceLevel(updateRecord: updateRecord)
+            advanceLevel(updateRecord: updateRecord, audioEffect: audioEffect)
         }
     }
     
-    private mutating func advanceLevel(updateRecord: (TimeInterval) -> Void) {
+    private mutating func advanceLevel(updateRecord: (TimeInterval) -> Void, audioEffect: AudioEffect) {
         level = level.next()
         if level == .level1 {
+            audioEffect.play(.victory)
             enterVictoryScreen(updateRecord: updateRecord)
             return
         }
+        audioEffect.play(.advanceLevel)
         acceleration += 200
         radiusDecreaseIntervals -= 1
         enterLevelScreen()

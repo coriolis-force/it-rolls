@@ -14,6 +14,7 @@ struct PlayView: View {
     @Binding var state: GameState
     @Environment(GlobalTimer.self) var globalTimer
     @Environment(MotionData.self) var motionData
+    @Environment(AudioEffect.self) var audioEffect
     @Environment(\.scenePhase) var scenePhase
     @AppStorage("record") var record: TimeInterval = 0
     @AppStorage("recordDate") var recordDate: TimeInterval = 0
@@ -58,7 +59,7 @@ struct PlayView: View {
                     })
                     .onReceive(globalTimer.timer) {
                         newTime in
-                        state.moveCircle(newTime: newTime, screenSize: geometry.size, motionData: motionData, updateRecord: self.updateRecord)
+                        state.moveCircle(newTime: newTime, screenSize: geometry.size, motionData: motionData, updateRecord: self.updateRecord, audioEffect: audioEffect)
                     }
                 }
             }

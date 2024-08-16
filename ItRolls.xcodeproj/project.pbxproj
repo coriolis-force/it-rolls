@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50284D8B2C6EA278007BE943 /* AudioEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50284D8A2C6EA278007BE943 /* AudioEffect.swift */; };
 		50A1C7922C3717CE006F91DF /* RollItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A1C7912C3717CE006F91DF /* RollItApp.swift */; };
 		50A1C7962C3717D0006F91DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A1C7952C3717D0006F91DF /* Assets.xcassets */; };
 		50A1C7992C3717D0006F91DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50A1C7982C3717D0006F91DF /* Preview Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50284D8A2C6EA278007BE943 /* AudioEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEffect.swift; sourceTree = "<group>"; };
 		50A1C78E2C3717CE006F91DF /* ItRolls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ItRolls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A1C7912C3717CE006F91DF /* RollItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollItApp.swift; sourceTree = "<group>"; };
 		50A1C7932C3717CE006F91DF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				50A1C79F2C371DD0006F91DF /* GlobalTimer.swift */,
 				50A1C7A12C37295D006F91DF /* MotionData.swift */,
 				50DC90A02C42F5E50040896A /* GameState.swift */,
+				50284D8A2C6EA278007BE943 /* AudioEffect.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 			files = (
 				50DC90A52C4447800040896A /* LevelView.swift in Sources */,
 				50A1C7922C3717CE006F91DF /* RollItApp.swift in Sources */,
+				50284D8B2C6EA278007BE943 /* AudioEffect.swift in Sources */,
 				50DC90A72C444C2C0040896A /* PlayView.swift in Sources */,
 				50DC90AB2C4451DE0040896A /* VictoryView.swift in Sources */,
 				50A1C7A02C371DD0006F91DF /* GlobalTimer.swift in Sources */,

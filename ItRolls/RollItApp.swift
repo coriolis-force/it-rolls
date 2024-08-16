@@ -11,8 +11,10 @@ import SwiftUI
 struct RollItApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView().environment(GlobalTimer()).environment(MotionData())
-            GameView().environment(GlobalTimer()).environment(MotionData())
+            GameView()
+                .environment(GlobalTimer())
+                .environment(MotionData())
+                .environment(AudioEffect())
         }
     }
 }
