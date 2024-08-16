@@ -6,6 +6,8 @@
 .DS_Store
 
 ## User settings
+*.xcuserstate
+project.xcworkspace/
 xcuserdata/
 
 ## Obj-C/Swift specific
