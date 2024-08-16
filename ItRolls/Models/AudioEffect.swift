@@ -18,10 +18,18 @@ class AudioEffect {
         case victory
     }
     
+    var muted: Bool {
+        didSet {
+            UserDefaults().setValue(muted, forKey: mutedKey)
+        }
+    }
+    
+    private let mutedKey = "muted"
     private let logger = Logger()
     private let soundIDs: [SoundType: SystemSoundID]
     
     init() {
+        muted = UserDefaults().bool(forKey: mutedKey)
         let fileNames = [SoundType.bounce: "PINEnterDigit_AX.caf",
                          SoundType.elimination: "PINDelete_AX.caf",
                          SoundType.advanceLevel: "PINSubmit_AX.caf",
@@ -35,6 +43,9 @@ class AudioEffect {
     }
     
     func play(_ soundType: SoundType) {
+        guard !muted else {
+            return
+        }
         guard let soundID = soundIDs[soundType] else {
             logger.error("Error: Unexpectedly found nil when unwrapping soundID of type \(String(describing: soundType))")
             return

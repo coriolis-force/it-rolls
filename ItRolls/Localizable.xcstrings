@@ -144,6 +144,26 @@
         }
       }
     },
+    "Mute" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "静音"
+          }
+        }
+      }
+    },
+    "Mute in the pause screen" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暂停屏幕里面可以静音"
+          }
+        }
+      }
+    },
     "No" : {
       "localizations" : {
         "zh-Hans" : {
@@ -274,6 +294,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "通关时间：%@"
+          }
+        }
+      }
+    },
+    "Unmute" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解除静音"
           }
         }
       }

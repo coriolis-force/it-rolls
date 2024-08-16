@@ -80,6 +80,9 @@ struct PlayView: View {
         @State var state = GameState()
         var body: some View {
             PlayView(state: $state)
+                .environment(GlobalTimer())
+                .environment(MotionData())
+                .environment(AudioEffect())
         }
     }
     return Preview()

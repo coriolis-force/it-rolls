@@ -29,6 +29,8 @@ struct InstructionView: View {
                 Spacer()
                 Text("Tap the screen to pause/unpause").font(.title)
                 Spacer()
+                Text("Mute in the pause screen").font(.title)
+                Spacer()
                 Spacer()
                 Spacer()
                 Text("Tap to start").font(.title)
